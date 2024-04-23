@@ -13,5 +13,21 @@ namespace Engine
         public string Description { get; set; }
         public int RewardExperiencePoints { get; set; }
         public int RewardGold { get; set; }
+        // added the reward item to the constructor check whether it should take a value or be null
+        public Item RewardItem { get; set; }
+
+        public List<QuestCompletionItem> QuestCompletionItems { get; set; }
+
+        public Quest(int id, string name, string description, int rewardExperiencePoints,
+            int rewardGold )
+        {
+            ID = id;
+            Name = name;
+            Description = description;
+            RewardExperiencePoints = rewardExperiencePoints;
+            RewardGold = rewardGold;
+            
+            QuestCompletionItems = new List<QuestCompletionItem>();
+        }
     }
 }

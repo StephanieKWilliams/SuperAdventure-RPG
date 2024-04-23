@@ -110,7 +110,7 @@
             // 
             // btnClear
             // 
-            btnClear.Location = new Point(482, 335);
+            btnClear.Location = new Point(523, 558);
             btnClear.Name = "btnClear";
             btnClear.Size = new Size(75, 23);
             btnClear.TabIndex = 9;
@@ -120,7 +120,7 @@
             // 
             // btnClose
             // 
-            btnClose.Location = new Point(60, 335);
+            btnClose.Location = new Point(55, 558);
             btnClose.Name = "btnClose";
             btnClose.Size = new Size(75, 23);
             btnClose.TabIndex = 10;
