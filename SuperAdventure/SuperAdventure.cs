@@ -9,7 +9,7 @@ namespace SuperAdventure
             InitializeComponent();
             _player = new Player(10, 10, 20, 0, 1);
 
-            
+
 
             lblHitPoints.Text = _player.CurrentHitPoints.ToString();
             lblGold.Text = _player.Gold.ToString();
@@ -18,7 +18,7 @@ namespace SuperAdventure
 
         }
 
-        
+
 
         private void btnClear_Click(object sender, EventArgs e)
         {
@@ -35,7 +35,32 @@ namespace SuperAdventure
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            Application.Exit(); 
+            Application.Exit();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rtbMessages_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
