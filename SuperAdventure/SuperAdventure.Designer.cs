@@ -39,11 +39,11 @@
             btnClose = new Button();
             label5 = new Label();
             cboWeapons = new ComboBox();
-            button1 = new Button();
+            btnWest = new Button();
             btnUseWeapon = new Button();
-            button3 = new Button();
+            btnSouth = new Button();
             btnNorth = new Button();
-            BtnEast = new Button();
+            btnEast = new Button();
             btnUsePotion = new Button();
             rtbLocation = new RichTextBox();
             rtbMessages = new RichTextBox();
@@ -149,15 +149,15 @@
             cboWeapons.Size = new Size(121, 23);
             cboWeapons.TabIndex = 12;
             // 
-            // button1
+            // btnWest
             // 
-            button1.Location = new Point(412, 457);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 13;
-            button1.Text = "West";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btnWest.Location = new Point(412, 457);
+            btnWest.Name = "btnWest";
+            btnWest.Size = new Size(75, 23);
+            btnWest.TabIndex = 13;
+            btnWest.Text = "West";
+            btnWest.UseVisualStyleBackColor = true;
+            btnWest.Click += btnWest_Click;
             // 
             // btnUseWeapon
             // 
@@ -167,16 +167,16 @@
             btnUseWeapon.TabIndex = 14;
             btnUseWeapon.Text = "Use";
             btnUseWeapon.UseVisualStyleBackColor = true;
-            btnUseWeapon.Click += button2_Click;
+            btnUseWeapon.Click += btnUseWeapon_Click;
             // 
-            // button3
+            // btnSouth
             // 
-            button3.Location = new Point(493, 487);
-            button3.Name = "button3";
-            button3.Size = new Size(75, 23);
-            button3.TabIndex = 15;
-            button3.Text = "South";
-            button3.UseVisualStyleBackColor = true;
+            btnSouth.Location = new Point(493, 487);
+            btnSouth.Name = "btnSouth";
+            btnSouth.Size = new Size(75, 23);
+            btnSouth.TabIndex = 15;
+            btnSouth.Text = "South";
+            btnSouth.UseVisualStyleBackColor = true;
             // 
             // btnNorth
             // 
@@ -186,15 +186,16 @@
             btnNorth.TabIndex = 16;
             btnNorth.Text = "North";
             btnNorth.UseVisualStyleBackColor = true;
+            btnNorth.Click += btnNorth_Click;
             // 
-            // BtnEast
+            // btnEast
             // 
-            BtnEast.Location = new Point(573, 457);
-            BtnEast.Name = "BtnEast";
-            BtnEast.Size = new Size(75, 23);
-            BtnEast.TabIndex = 17;
-            BtnEast.Text = "East";
-            BtnEast.UseVisualStyleBackColor = true;
+            btnEast.Location = new Point(573, 457);
+            btnEast.Name = "btnEast";
+            btnEast.Size = new Size(75, 23);
+            btnEast.TabIndex = 17;
+            btnEast.Text = "East";
+            btnEast.UseVisualStyleBackColor = true;
             // 
             // btnUsePotion
             // 
@@ -222,7 +223,6 @@
             rtbMessages.Size = new Size(360, 286);
             rtbMessages.TabIndex = 20;
             rtbMessages.Text = "";
-            rtbMessages.TextChanged += rtbMessages_TextChanged;
             // 
             // dgvQuests
             // 
@@ -255,7 +255,6 @@
             dgvInventory.RowHeadersVisible = false;
             dgvInventory.Size = new Size(312, 309);
             dgvInventory.TabIndex = 22;
-            dgvInventory.CellContentClick += dataGridView2_CellContentClick;
             // 
             // cboPotions
             // 
@@ -264,7 +263,6 @@
             cboPotions.Name = "cboPotions";
             cboPotions.Size = new Size(121, 23);
             cboPotions.TabIndex = 23;
-            cboPotions.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // SuperAdventure
             // 
@@ -277,11 +275,11 @@
             Controls.Add(rtbMessages);
             Controls.Add(rtbLocation);
             Controls.Add(btnUsePotion);
-            Controls.Add(BtnEast);
+            Controls.Add(btnEast);
             Controls.Add(btnNorth);
-            Controls.Add(button3);
+            Controls.Add(btnSouth);
             Controls.Add(btnUseWeapon);
-            Controls.Add(button1);
+            Controls.Add(btnWest);
             Controls.Add(cboWeapons);
             Controls.Add(label5);
             Controls.Add(btnClose);
@@ -315,11 +313,11 @@
         private Button btnClose;
         private Label label5;
         private ComboBox cboWeapons;
-        private Button button1;
+        private Button btnWest;
         private Button btnUseWeapon;
-        private Button button3;
+        private Button btnSouth;
         private Button btnNorth;
-        private Button BtnEast;
+        private Button btnEast;
         private Button btnUsePotion;
         private RichTextBox rtbLocation;
         private RichTextBox rtbMessages;
